@@ -20,6 +20,8 @@ class Triad
       "equilateral"
     elsif (@shortest_side == @mid_side or @mid_side == @longest_side)
       "isosceles"
+    else
+      "scalene"
     end
   end
 end
