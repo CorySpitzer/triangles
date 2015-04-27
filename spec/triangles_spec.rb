@@ -24,7 +24,7 @@ describe('Triad') do
 
   describe('#triangle_type') do
     it('returns equilateral for a triangle with all sides equal') do
-      expect(Triad.new(1,1,1)).triangle_type().to(eq('equilateral'))
+      expect(Triad.new(1,1,1).triangle_type()).to(eq('equilateral'))
     end
   end
 end
