@@ -26,5 +26,10 @@ describe('Triad') do
     it('returns equilateral for a triangle with all sides equal') do
       expect(Triad.new(1,1,1).triangle_type()).to(eq('equilateral'))
     end
+
+    it('returns isosceles for a triangle with exactly two sides equal') do
+      expect(Triad.new(2,2,3).triangle_type()).to(eq('isosceles'))
+    end
   end
+
 end
