@@ -30,6 +30,10 @@ describe('Triad') do
     it('returns isosceles for a triangle with exactly two sides equal') do
       expect(Triad.new(2,2,3).triangle_type()).to(eq('isosceles'))
     end
+
+    it('returns scalene for a triangle with all different sides') do
+      expect(Triad.new(3,4,5).triangle_type()).to(eq('scalene'))
+    end
   end
 
 end
