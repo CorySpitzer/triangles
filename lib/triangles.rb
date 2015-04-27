@@ -8,7 +8,7 @@ class Triad
   end
 
   define_method(:triangle?) do
-      if @shortest_side == @longest_side || (@shortest_side + @mid_side) > @longest_side
+    if @shortest_side == @longest_side || (@shortest_side + @mid_side) > @longest_side
       true
     else
       false
@@ -17,7 +17,9 @@ class Triad
 
   define_method(:triangle_type) do
     if @shortest_side == @longest_side
-      return "equilateral"
+      "equilateral"
+    elsif (@shortest_side == @mid_side or @mid_side == @longest_side)
+      "isosceles"
     end
   end
 end
