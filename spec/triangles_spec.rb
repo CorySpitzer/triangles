@@ -7,4 +7,10 @@ describe('Triad#triangle_test') do
     expect(triangle.triangle_test()).to(eq(true))
   end
 
+  it('returns false if one side is zero and any other side is
+      not zero') do
+    not_triangle = Triad.new(0,0,1)
+    expect(not_triangle.triangle_test()).to(eq(false))
+  end
+
 end
